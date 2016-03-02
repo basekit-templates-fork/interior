@@ -1,12 +1,14 @@
 {
-    "name": "Author",
-    "thumbnail": "author.png",
-    "screenshot": "author-screenshot.jpg",
+    "name": "Interior",
+    "thumbnail": "interior.png",
+    "screenshot": "interior-screenshot.jpg",
     "widgetVersion":2,
     "pageTypes": ["home"],
     "templateType":"standard",
     "images": [
-        "images/logo-default.png"
+        "images/image-1.jpg",
+        "images/logo-default.png",
+        "images/feature.jpg"
     ],
     "colorSwatches":
     {
@@ -14,9 +16,9 @@
             "color1":"#ffffff",
             "color2":"#1E1F1B",
             "color3":"#1E1F1B",
-            "color4":"#1E1F1B",
+            "color4":"#000000",
             "color5":"#737373",
-            "color6":"#ffffff",
+            "color6":"#000000",
             "color7":"#121010"
         },
         "Swatch 2": {
@@ -48,9 +50,9 @@
         }
     },
     "fontSwatch": {
-       "title": "Lora, Cabin",
+       "title": "Playfair, Lato",
         "font1": {
-            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-family": "\"Playfair Display\", Times New Roman, serif",
             "font-size": "26px",
             "font-weight": "400",
             "line-height": "40px",
@@ -58,7 +60,7 @@
             "letter-spacing": "0px"
         },
         "font2": {
-            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-family": "\"Playfair Display\", Times New Roman, serif",
             "font-size": "22px",
             "font-weight": "400",
             "line-height": "38px",
@@ -66,7 +68,7 @@
             "letter-spacing": "0px"
         },
         "font3": {
-            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-family": "\"Playfair Display\", Times New Roman, serif",
             "font-size": "20px",
             "font-weight": "400",
             "line-height": "30px",
@@ -74,7 +76,7 @@
             "letter-spacing": "0px"
         },
         "font4": {
-            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-family": "\"Playfair Display\", Times New Roman, serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "28px",
@@ -82,7 +84,7 @@
             "letter-spacing": "0px"
         },
         "font5": {
-            "font-family": "\"Source Sans Pro\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "28px",
@@ -90,7 +92,7 @@
             "letter-spacing": "0px"
         },
         "font6": {
-            "font-family": "\"Source Sans Pro\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Playfair Display\", Times New Roman, serif",
             "font-size": "24px",
             "font-weight": "300",
             "line-height": "34px",
@@ -101,7 +103,7 @@
             "background-color-hover": "@color-swatch1"
          },
         "font7": {
-            "font-family": "\"Source Sans Pro\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "26px",
@@ -111,27 +113,27 @@
             "background-color-hover": "darken(@color-swatch3,10%)"
         },
         "font8": {
-            "font-family": "\"Lora\", \"Georgia\", serif",
+            "font-family": "\"Playfair Display\", Times New Roman, serif",
             "font-size": "40px",
             "font-weight": "400",
             "line-height": "50px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch4",
             "letter-spacing": "0px"
         },
         "font9": {
-            "font-family": "\"Source Sans Pro\", Geneva, Tahoma, sans-serif",
-            "font-size": "20px",
-            "font-weight": "400",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
             "line-height": "30px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch5",
             "letter-spacing": "0px"
         },
         "font10": {
-            "font-family": "\"Source Sans Pro\", Geneva, Tahoma, sans-serif",
-            "font-size": "30px",
+            "font-family": "\"Playfair Display\", Times New Roman, serif",
+            "font-size": "34px",
             "font-weight": "300",
-            "line-height": "40px",
-            "color": "@color-swatch1",
+            "line-height": "44px",
+            "color": "@color-swatch4",
             "letter-spacing": "0px"
         }
     },
@@ -144,6 +146,7 @@
             "color__body--background": "@color-swatch1",
             "color__link--text": "@color-swatch2",
             "color__companyname--text": "@font-swatch10-color",
+            "color__header--background": "@color-swatch1",
 
             "font__companyname--font-family": "@font-swatch10-font-family",
             "font__companyname--font-size": "@font-swatch10-font-size",
@@ -192,7 +195,7 @@
             "font__p--letter-spacing" : "@font-swatch5-letter-spacing"
         },
         "navigation": {
-            "color__navigation--background": "@color__primary",
+            "color__navigation--background": "#ffffff",
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--hover": "@font-swatch6-color",
 
@@ -205,7 +208,7 @@
         "feature": {
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
-            "color__feature-content--background":"#000000",
+            "color__feature-content--background":"transparent",
             "color__feature-button--text": "@font-swatch8-color",
             "color__feature-button--border": "@font-swatch8-color",
             "color__feature-button--background": "transparent",

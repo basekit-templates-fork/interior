@@ -1,2 +1,3 @@
-# author
-Author Template - A basekit v8 Template
+# Interior
+
+Basekit v8 Template
