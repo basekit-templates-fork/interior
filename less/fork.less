@@ -1,5 +1,16 @@
+// -----------------------------
+// Fork Changes
+// -----------------------------
+
+
+// Template Styles
+// -----------------------------
+
 .template-header {
     background-color: @color__header--background;
+    @media @mobile {
+        padding: 0px 30px;
+    }
 }
 
 .bk-pt-default .container {
@@ -9,6 +20,14 @@
 .header-social h4 {
     padding-bottom: 0;
 }
+
+body.edit .extendednavigation {
+    position: fixed;
+}
+
+
+// Navigation
+// -----------------------------
 
 .extendednavigation {
     width: 150px;
@@ -54,6 +73,10 @@
     }
 }
 
+
+// Feature
+// -----------------------------
+
 .feature {
     margin-left: 150px!important;
     @media @tablet {
@@ -92,3 +115,21 @@
         height: 570px;
     }
 }
+
+
+// Ecommerce
+// -----------------------------
+
+.ecomproductslist__form-body, .ecomproductslist__form-body {
+    @media @tablet {
+        margin: 0;
+    }
+}
+
+.message {
+    margin: 10px 0px;
+    padding: 10px 40px;
+    display: block;
+    background-color: @color-swatch1;
+}
+
