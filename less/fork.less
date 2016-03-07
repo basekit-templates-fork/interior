@@ -26,7 +26,10 @@ body.edit .extendednavigation {
 }
 
 .homepage-centred-container .page-wrapper {
-    margin-left: 80px;
+    margin-left: 80px!important;
+    @media @tablet {
+        margin-left: 0!important;
+    }
 }
 
 
@@ -141,5 +144,9 @@ body.edit .extendednavigation {
     padding: 10px 40px;
     display: block;
     background-color: @color-swatch1;
+}
+
+.ecomproduct__select {
+    min-width: 250px;
 }
 
