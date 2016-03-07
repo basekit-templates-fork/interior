@@ -2,6 +2,10 @@
     background-color: @color__header--background;
 }
 
+.bk-pt-default .container {
+    max-width: 100%;
+}
+
 .header-social h4 {
     padding-bottom: 0;
 }
@@ -36,6 +40,20 @@
     }
 }
 
+.extendednavigation + .widget-overlay {
+    width: 60px;
+    position: absolute !important;
+    z-index: 999999;
+    left: 45px;
+    top: 40px;
+    height: 45px;
+    @media @tablet {
+        height: 60px;
+        left: 0;
+        top: 10px;
+    }
+}
+
 .feature {
     margin-left: 150px!important;
     @media @tablet {
@@ -52,10 +70,12 @@
     max-width: 60%!important;
     padding: 30px;
     @media @tablet {
-        max-width: 70%;
+        max-width: 80%!important;
+        padding: 20px;
     }
     @media @mobile {
-        max-width: 90%;
+        max-width: 90%!important;
+        padding: 10px;
     }
 }
 
