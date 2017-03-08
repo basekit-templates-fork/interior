@@ -3,7 +3,7 @@
     "thumbnail": "interior.png",
     "screenshot": "interior-screenshot.jpg",
     "widgetVersion":2,
-    "pageTypes": ["home"],
+    "pageTypes": ["home", "blogpostlist", "blogpost"],
     "templateType":"standard",
     "images": [
         "images/image-1.jpg",

@@ -1,21 +1,7 @@
-<!doctype html>
-<html class="no-js html-default" lang="{{ page.seoLang }}">
+{% extends "layout.twig" %}
+{% block class %}bk-pt-default{% endblock %}
+{% block content %}
 
-<head>
-    <meta charset="utf-8" />
-    <title>{{ page.title }}</title>
-    <meta name="keywords" content="{{ page.keywords }}" />
-    <meta name="description" content="{{ page.description }}" />
-
-    {% if site.favicon %}
-        <link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
-        <link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
-    {% endif %}
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    {% include basekit.headScript %}
-</head>
-<body class="{{ page.backgroundClass }} bk-pt-default">
 
 {{widget('extendednavigation', 'navigation', {"align":"left"})|raw}}
 
@@ -24,79 +10,22 @@
     <!-- Container -->
     <div class="container">
 
-        <div class="sticky-footer">
+        {% include "includes/header.twig" %}
 
-            {% include "includes/header.twig" %}
+        <!-- Page Content -->
+        <section class="template-content">
 
-            <!-- Page Content -->
-            <section class="template-content">
+            <!-- Main Widget Zone -->
+            {{zone('main')|raw}}
 
-                <!-- Main Widget Zone -->
-                {{zone('main')|raw}}
-
-            </section>
-            <!-- End Page Content -->
-
-        </div>
+        </section>
 
         <!-- Footer Text Widget -->
         {% include "includes/footer.twig" %}
 
     </div>
-    <!-- End Container -->
 
 </div>
 
-<!-- End Page Wrapper -->
 
-   {% include basekit.bodyScript %}
-
-    <!-- jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ asset('libs/jquery-1.10.2.min.js')}}"><\/script>')</script>
-
-    <!-- Clickable -->
-    <script src="{{ asset('js/clickable.js')}}"></script>
-
-    <!-- Nav Menu Script -->
-    <script>
-
-        // Toggles class open to display/hide the whole navigation
-        $( ".navigation-toggle" ).click(function() {
-            $( ".bk-extendednavigation" ).toggleClass( "open" );
-        });
-
-        // Toggles class open to add noscroll to body
-        $( ".navigation-toggle" ).click(function() {
-            $( "body" ).toggleClass( "noscroll" );
-        });
-
-        // Toggles class open to add to folder
-        $( ".navigation-item.folder .item-name--parent" ).click(function() {
-            $( ".navigation-item.folder" ).toggleClass( "folder-open" );
-        });
-
-    </script>
-
-        <!-- Masonry -->
-
-    <!-- imagesLoaded -->
-    <script src="{{asset('js/imagesloaded.min.js')}}"></script>
-    <!-- Masonry -->
-    <script src="{{asset('js/masonry.min.js')}}"></script>
-
-    <script>
-        var container = document.querySelector('.post-items');
-
-        if (container) {
-          imagesLoaded( container, function() {
-            var msnry = new Masonry( container, {
-              itemSelector: '.post-article'
-            });
-          });
-        }
-
-    </script>
-
-</body>
-</html>
+{% endblock %}
