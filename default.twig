@@ -40,7 +40,7 @@
     <script src="{{asset('js/masonry.min.js')}}"></script>
 
     <!-- Masonry Initializer -->
-    <script>
+    <script nonce="{{ numberUsedOnce }}">
         var container = document.querySelector('.post-items');
 
         if (container) {
