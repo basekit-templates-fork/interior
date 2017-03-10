@@ -36,7 +36,7 @@
     .flex-vert-center; // Mixins
     .justify-content(@justify: space-between); // Mixins
     @media only screen and (min-width : 600px) {
-        padding: 26px 0 0;
+        padding: 25px 0;
     }
     @media @bp-tablet {
         .flex-wrap(@wrap: wrap); // Mixins
@@ -44,6 +44,7 @@
 
     @media @bp-mobile {
         .justify-content(@justify: center); // Mixins
+        padding: 15px 30px !important;
     }
 }
 
@@ -650,7 +651,7 @@ label {
 
 // Select box
 .select {
-    border: 1px solid @black;
+    border: 1px solid darken(@color__body--background, 25%);
     color: @black;
     font-size: bkscale(@font__p--font-size, 0.9);
     border-radius: 0;
@@ -684,7 +685,7 @@ input[type="password"],
 textarea,
 .input--single-line {
     // Padding is set in stylesheet.less
-    border: 1px solid @button-color;
+    border: 1px solid darken(@color__body--background, 25%);
     resize: none;
     &:focus {
         border-color: @contrast-color;

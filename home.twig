@@ -45,3 +45,27 @@
     </div>
 
 {% endblock %}
+
+
+{% block scripts %}
+
+    <!-- imagesLoaded -->
+    <script src="{{asset('js/imagesloaded.min.js')}}"></script>
+
+    <!-- Masonry -->
+    <script src="{{asset('js/masonry.min.js')}}"></script>
+
+    <!-- Masonry Initializer -->
+    <script nonce="{{ numberUsedOnce }}">
+        var container = document.querySelector('.post-items');
+
+        if (container) {
+          imagesLoaded( container, function() {
+            var msnry = new Masonry( container, {
+              itemSelector: '.post-article'
+            });
+          });
+        }
+    </script>
+
+{% endblock %}

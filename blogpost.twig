@@ -1,5 +1,5 @@
 {% extends "layout.twig" %}
-{% block class %}bk-pt-default{% endblock %}
+{% block class %}bk-pt-blog{% endblock %}
 {% block content %}
 
 
@@ -16,7 +16,7 @@
         <section class="template-content">
 
             <!-- Main Widget Zone -->
-            {{zone('main')|raw}}
+            {{widget('blogpost', 'singleblogpost', {})|raw}}
 
         </section>
 
@@ -40,7 +40,7 @@
     <script src="{{asset('js/masonry.min.js')}}"></script>
 
     <!-- Masonry Initializer -->
-    <script nonce="{{ numberUsedOnce }}">
+    <script>
         var container = document.querySelector('.post-items');
 
         if (container) {

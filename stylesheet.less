@@ -8,7 +8,6 @@
 
 
 @import "@{templateCommon}/bk-less-framework-v8.less";          // BK LESS Framework
-//@import "@{templateLocal}/bk-v8-test.less";
 
 @import "@{templateLocal}/less/v8-variables.less";              // V8 Variables
 
@@ -44,7 +43,7 @@
 // Wrapping container
 .container {
     max-width: 1200px;
-    margin: 0 auto 0 160px;
+    margin: 0 auto 0 150px;
     width: 80%;
 
     @media @bp-tablet {
@@ -90,51 +89,13 @@
 }
 
 
-// Sticky footer in default page
-
-.bk-pt-default .container {
-    @media only screen and (min-width: 1025px) {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        min-height: 100vh;
-    }
-}
-
-.sticky-footer {
-    @media only screen and (min-width: 1025px) {
-        flex: 1;
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-    }
-}
-
 
 // -----------------------------
 // Page Layout
 // -----------------------------
 
 .page-wrapper {
-    padding-top: 12px;
-
+    padding-top: 0;
 }
 
 .template-content {
@@ -156,7 +117,7 @@
 // -----------------------------
 
 .template-footer {
-    margin: 100px 0 25px;
+    margin: 80px 0 25px;
     width: 100%;
     float: left;
     @media @bp-mobile {

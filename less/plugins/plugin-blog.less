@@ -195,13 +195,22 @@
 // --------------------------------
 
 .blogpost {
-    max-width: 600px;
     margin: 0 auto;
 }
 
 
 .blogpost__post-content {
-    margin: 50px 0 20px;
+    margin: 50px auto 20px;
+}
+
+.blogpost__post-footer {
+    margin: 0 auto;
+}
+
+
+.blogpost__post-content,
+.blogpost__post-footer {
+    max-width: 800px;
 }
 
 
@@ -209,9 +218,25 @@
     margin-bottom: 10px;
 }
 
+.blogpost .post-image {
+    position: relative;
+    height: 65vh;
 
-.post-image .image {
-    max-height: inherit; // Bootstrap overide so that blog images retain full height
+    .image-link {
+        background-position: center;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+    .image {
+        display: none;
+        visibility: hidden;
+    }
 }
-
-
